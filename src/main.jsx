@@ -1,9 +1,9 @@
 import { StrictMode } from "react"; 
 import { createRoot } from "react-dom/client";
-import Mypage from "./Pages/Mypage";
+import Home from "./Pages/Home";
 import Login from "./Pages/Login";
 import { BrowserRouter,Routes,Route } from "react-router-dom";
-
+import { BrowserRouter } from "react-router-dom";
 
 const rootElement = document.getElementById("root");
 const root = createRoot(rootElement);
@@ -12,10 +12,9 @@ root.render(
   <StrictMode>
     <BrowserRouter>
     <Routes>
-  <Route element={<Mypage />} path='/mypage'/>
+  <Route element={<Home />} path='/home'/>
   <Route element={<Login />} path='/login'/>
-  <Route element={<Mypage />} path='/'/>
-<Route element={<Login />} path='/'/>
+  <Route element={<Home />} path='/'/>
 
 
  </Routes>
